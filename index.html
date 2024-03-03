@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformando seu Ano</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 100%;
+            padding: 0 10px;
+        }
+        .resources-list {
+            margin-top: 20px;
+        }
+        .resource-item {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .ebook-description {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .ebook-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .ebook-text {
+            font-size: 18px;
+        }
+        .buy-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .buy-button:hover {
+            background-color: #0056b3;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px 10px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        #footer {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.footer-hidden {
+    opacity: 0;
+    transform: translateY(100%);
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Transformando seu Ano: Um Guia Prático para Resoluções de Ano Novo</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre o eBook</a></li>
+                <li><a href="#resources">Recursos</a></li>
+                <li><a href="#buy">Compre Agora</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>Sobre o eBook</h2>
+            <div class="container">
+                <div class="ebook-description">
+                    <h1 class="ebook-title">Transformando seu Ano: Um Guia Prático para Resoluções de Ano Novo</h1>
+                    <p class="ebook-text">Este eBook é um guia abrangente que oferece estratégias práticas e insights inspiradores para ajudar você a planejar, implementar e acompanhar suas resoluções de Ano Novo. Explore maneiras de definir metas realistas, cultivar hábitos saudáveis e fortalecer relacionamentos familiares e profissionais. Prepare-se para uma jornada de autodescoberta e transformação pessoal enquanto embarca na emocionante jornada de transformar seu ano.</p>
+                </div>
+            </div>
+        </section>
+        <section id="resources">
+            <div class="container">
+                <h2>Recursos do eBook</h2>
+                <ul class="resources-list">
+                    <li class="resource-item">Lista de verificação para definição de metas</li>
+                    <li class="resource-item">Exemplos de resoluções para inspiração</li>
+                    <li class="resource-item">Links para recursos adicionais mencionados no eBook</li>
+                </ul>
+            </div>
+        </section>
+        <section id="buy">
+            <form action="processar_compra.php" method="post">
+        
+                <div class="container">
+                    <h2>Compre Agora</h2>
+                    <p>Opções de compra, incluindo diferentes formatos de eBook.</p>
+                    <p>Preço do eBook: R$50,00</p>
+                    <a href="https://jon0th4n00.hotmart.host/pagina-de-vendas-d1b0b2e4-0153-4bfd-821b-1d266b4cf92a" class="buy-button">Comprar</a>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer id="footer">
+        <p>&copy; 2024 Transformando seu Ano. Todos os direitos reservados.</p>
+    </footer>
+</body>
+<script>
+        function scrollToSection(sectionId) {
+    var section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+setTimeout(function() {
+    var footer = document.getElementById('footer');
+    if (footer) {
+        footer.classList.add('footer-hidden');
+    }
+}, 2000); // 2000
+</script>
